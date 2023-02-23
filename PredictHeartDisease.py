@@ -16,7 +16,7 @@ medianBMI = df.BMI.median()
 medianGlucose = df.glucose.median()
 
 df.education = df.education.fillna(median)
-df.cigsPerDay = df.cigsPerDay.fillna(median)
+df.cigsPerDay = df.cigsPerDay.fillna(medianCig)
 df.BMI = df.BMI.fillna(medianBMI)
 df.glucose = df.glucose.fillna(medianGlucose)
 
